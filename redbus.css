@@ -1,0 +1,521 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+
+body {
+  background: #ffffff;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+#headerBlock {
+  width: 100%;
+  z-index: 1;
+  background: #d84f57;
+  position: fixed;
+}
+
+#headerBlock .container {
+  display: flex;
+  width: 1200px;
+  margin: 0px auto;
+  height: 55px;
+  align-items: center;
+}
+
+#headerBlock .container .leftNav {
+  flex: 1;
+}
+
+#headerBlock .container .rightNav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* slider block css starts here */
+
+#sliderBlock img {
+  width: 100%;
+  height: 450px;
+}
+
+/*--------left menu block -----------------*/
+.leftNav section {
+  display: flex;
+}
+
+.leftNav ul,
+.rightNav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.leftNav ul li a,
+.rightNav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 14px;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.logo {
+  flex: 1;
+}
+
+.leftmenu {
+  flex: 8;
+}
+
+.logo a {
+  background-image: url(../images/logo.png);
+  width: 80px;
+  height: 48px;
+  display: flex;
+  text-indent: -9999px;
+}
+
+.leftNav ul li a.active {
+  font-weight: 600;
+  border-bottom: 3px solid #fff;
+  transition: ease-in-out 0.6s;
+}
+
+.leftNav ul li a:hover {
+  color: #f9e7ea;
+}
+
+.fa-user-circle {
+  font-size: 35px;
+  font-weight: lighter;
+  line-height: 20px;
+}
+
+.fa-chevron-down {
+  margin: 0px 0px 0 6px;
+}
+
+.after_user_circle {
+  margin: -24px 21px 0 41px !important;
+  display: block;
+}
+
+#searchBusesBlock article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 921px;
+  position: relative;
+  top: 50px;
+}
+
+#sliderBlock {
+  background-image: url("./images/safetyplus1\ \(1\).png");
+  background-position: top;
+  background-repeat: round;
+  width: 100%;
+  background-size: cover;
+}
+
+/*-------Attribute selector -----*/
+
+input[type="date"] {
+  font-size: 11px;
+  padding: 14px 30px !important;
+  border-right: none !important;
+}
+
+#sliderBlock article input {
+  padding: 14px 28px 16px 40px;
+  border: none;
+  border-right: 1.3px solid #888;
+  box-sizing: border-box;
+}
+
+#sliderBlock article button {
+  height: 46px;
+  width: 144px;
+  background: #d74f57;
+  box-sizing: border-box;
+  border: none;
+  font-size: 14px;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.city_icon {
+  position: relative;
+}
+
+.city_icon i {
+  position: absolute;
+  top: -14px;
+  left: 6px;
+  font-size: 20px;
+}
+
+/* latestUpdateBlock css starts here */
+#latestUpdateBlock {
+  display: flex;
+  justify-content: center;
+}
+
+#latestUpdateBlock article {
+  width: 530px;
+  height: 100px;
+  padding: 10px 20px 10px 20px;
+  box-sizing: border-box;
+  background-color: #fff5e5;
+  display: flex;
+  align-items: center;
+  margin-top: -40px;
+}
+
+#latestUpdateBlock article div:nth-child(1) {
+  flex: 2;
+}
+
+#latestUpdateBlock article div:nth-child(2) {
+  flex: 8;
+}
+
+#latestUpdateBlock article div:nth-child(3) {
+  flex: 3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 94px;
+}
+
+.bell-on i {
+  color: #d74f57 !important;
+  font-size: 50px !important;
+}
+
+#latestUpdateBlock article h4 {
+  font-size: 15px;
+  margin: 0;
+  padding: 5px;
+}
+
+#latestUpdateBlock article p {
+  font-size: 12px;
+  margin: 0;
+  padding: 5px;
+  font-weight: lighter;
+}
+
+#latestUpdateBlock article button {
+  width: 130px;
+  height: 25px;
+  background: #d74f57;
+  color: #fff;
+  padding: 4px;
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+/*----on time css block starts here -----*/
+#OnTimeBlock > article {
+  width: 1200px;
+  border: 1px solid #cccccc;
+  background: #ffffff;
+  margin: 60px auto;
+  display: flex;
+  height: 320px;
+}
+
+.leftOnDiv {
+  flex: 1;
+}
+.leftOnDiv p {
+  background: url("../images/ic-shield-red-big.png");
+  height: 88px;
+  width: 88px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  margin: 20px;
+}
+
+.rightOnDiv {
+  flex: 8;
+}
+
+.img3_hero,
+.img4_Hero {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+
+.img3_hero {
+  background-image: url("./images/tip-icon.png");
+  width: 24px;
+  height: 24px;
+}
+
+.img4_Hero {
+  background-image: url("./images/otgText.png");
+  width: 156px;
+  height: 26px;
+}
+.rightInsideFooter {
+  display: flex;
+  margin: 10px;
+}
+.rightInsideFooter h2{
+  height: 12px;
+  font-size: 19px;
+  font-weight: bolder;
+  color: #1446a0;
+}
+.rightInsideFooter h5{
+  width: 278px;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: .3px;
+  text-align: left; 
+  margin-bottom: 0px;
+}
+.rightInsideFooter p{
+  width: 278px;
+  height: 60px;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: .3px;
+  color: #34495e;
+  text-align: left;
+  margin-top: 2px;
+}
+.rightInsideFooter div {
+  flex: 1;
+}
+
+/* ----on time css block ends here -----*/
+
+/*------track css block starts here------*/
+#trackbus > article{
+  width: 1200px;
+  height: 512px;
+  background-color: #e8ecef;
+  margin: 0 auto;
+  display: flex;
+}
+.leftimg p{
+  background-image: url(./images/tmb_img.png);
+    height: 182px;
+    width: 359px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 26px;
+    margin-left: 71px;
+    text-indent: -9999px;
+}
+.leftimg{
+  flex: 1;
+}
+
+.rightinsideon h2{
+  color: #4a4a4a;
+  margin: 51px;
+  margin-left: -28px;
+  font-weight: bolder;
+}
+.rightinsideon h4{
+  font-size: 14px;
+  font-weight: lighter;
+  color: #4a4a4a;
+  margin: 265px;
+  margin-top: -22px;
+  margin-left: -25px;
+  margin-bottom: 16px;
+      }
+  .rightinsideon button{
+    height: 30px;
+    width: 125px;
+    color: #4c8fdb;
+    border: 1px solid #4c8fdb;
+    font-size: 14px;
+    margin-left: -23px;
+    margin-top: -38px;
+    margin-bottom: -9px;
+  }
+  .downside{
+    display: flex;
+    margin: 24px;
+  }
+  .downside div h5{
+    color: #4a4a4a;
+    font-weight: 100;
+    letter-spacing: 1.3px;
+    margin-left: -275px;
+  }
+  .downside div h2{
+    color: #977174;
+    margin-left: -289px;
+    font-size: 37px;
+    margin-top: -21px;
+    font-weight: 100;
+  }
+  .downside div h6{
+    color: #4a4a4a;
+    text-align: center;
+    font-size: 14px;
+    margin: 283px;
+    margin-left: -302px;
+    margin-top: -7px;
+  }
+
+
+/*------track css block ends here------*/
+
+
+/*------OUR GLOBAL PRESENCE STARTS HERE------*/
+
+.globalBlockContent {
+  width: 1200px;
+  margin: 30px auto;
+}
+
+.globalBlockContent h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.globalBlockContent article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+
+}
+
+.globalBlockContent article>div {
+  flex-basis: 32%;
+  /* ----width ----*/
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+
+}
+
+.india p:first-child {
+  background: url(./images/63f6a3d801cae05e26a753cbdc8e2dee.png) !important;
+  height: 80px;
+  width: 123px;
+  background-repeat: no-repeat !important;
+  background-position: 0px -294px !important;
+  text-indent: -9999px;
+}
+
+.colombia p:first-child {
+  background: url(./images/63f6a3d801cae05e26a753cbdc8e2dee.png) !important;
+  height: 80px;
+  width: 123px;
+  background-repeat: no-repeat !important;
+  background-position: 0px -614px !important;
+  text-indent: -9999px;
+}
+
+.Indonesia p{
+  background: url(./images/63f6a3d801cae05e26a753cbdc8e2dee.png) !important;
+  height: 80px;
+  width: 123px;
+  background-repeat: no-repeat !important;
+  background-position: 0px -207px !important;
+  text-indent: -9999px;
+}
+
+.country {
+  text-align: center;
+  text-transform: uppercase;
+  color: #777;
+  font-size: 15px;
+}
+
+/*------OUR GLOBAL PRESENCE ENDS HERE------*/
+
+/*-----WE PROMISE TO DELIVER STARTS HERE ------*/
+#promiseBlock article {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#promiseBlock article>header {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#promiseBlock article>header p {
+  margin: 0;
+  padding: 0;
+}
+
+#promiseBlock article>header p img {
+  height: 100px;
+}
+
+#promiseBlock article>header h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px 0 0 0;
+}
+
+.mainPromiseContainer {
+  background: #fff;
+  display: flex;
+  margin-top: 50px;
+  border: 1px solid #cccccc87;
+}
+
+.mainPromiseContainer div {
+  flex: 1;
+  border: 1px solid #cccccc87;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.mainPromiseContainer div img {
+  width: 112px;
+  height: 86px;
+}
+
+.mainPromiseContainer div h5 {
+  text-transform: uppercase;
+  color: #444;
+  font-weight: lighter;
+  padding: 30px 30px 0px;
+  text-align: center;
+  height: 20px;
+}
+
+.mainPromiseContainer div footer p {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  line-height: 23px;
+
+}
+
+/*-----WE PROMISE TO DELIVER ENDS HERE ------*/
